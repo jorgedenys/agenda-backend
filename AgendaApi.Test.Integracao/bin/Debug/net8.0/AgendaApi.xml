@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AgendaApi</name>
+    </assembly>
+    <members>
+        <member name="M:AgendaApi.Controllers.AgendaController.ListarAgendaOrdenadaPorNome(System.Int32,System.Int32)">
+            <summary>Lista os contatos da Agenda ordenados por Nome</summary>
+            <returns>ActionResultList</returns>
+            <response code = "200"> Caso a consulta seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.AgendaController.BuscarAgenda(System.Int32)">
+            <summary>Busca um contato da Agenda</summary>
+            <param name = "id" >Id do Contato da Agenda que deverá ser buscado</param>
+            <returns>ActionResult</returns>
+            <response code = "200"> Caso a consulta seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.AgendaController.AdicionarAgenda(AgendaApi.Controllers.Dtos.Agenda.CreateAgendaDto)">
+            <summary>Adiciona um Contato da Agenda no banco de dados</summary>
+            <param name = "agendaDto" > Objeto com os campos necessários para criação de um Contato da Agenda</param>
+            <returns>ActionResult</returns>
+            <response code = "201" > Caso inserção seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.AgendaController.AtualizarAgenda(System.Int32,AgendaApi.Controllers.Dtos.Agenda.UpdateAgendaDto)">
+            <summary>Atualiza um Contato da Agenda no banco de dados</summary>
+            <param name = "agendaDto" > Objeto com os campos necessários para atualização de um Contato da Agenda</param>
+            <returns>ActionResult</returns>
+            <response code = "204" > Caso a atualização seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.AgendaController.DeletarAgenda(System.Int32)">
+            <summary>Exclui um Contato da Agenda do banco de dados</summary>
+            <param name = "id" >Id do Contato da Agenda que deverá ser excluído</param>
+            <returns>ActionResult</returns>
+            <response code = "204" > Caso a exclusão seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.EnderecoController.ListarEndereco(System.Int32,System.Int32)">
+            <summary>Lista os endereços</summary>
+            <returns>ActionResultList</returns>
+            <response code = "200"> Caso a consulta seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.EnderecoController.BuscarEndereco(System.Int32)">
+            <summary>Busca um endereço</summary>
+            <param name = "id" >Id do endereço que deverá ser buscado</param>
+            <returns>ActionResult</returns>
+            <response code = "200"> Caso a consulta seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.EnderecoController.AdicionarEndereco(AgendaApi.Controllers.Dtos.Endereco.CreateEnderecoDto)">
+            <summary>Adiciona um Endereço no banco de dados</summary>
+            <param name = "agendaDto" > Objeto com os campos necessários para criação de um Endereço</param>
+            <returns>ActionResult</returns>
+            <response code = "201" > Caso inserção seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.EnderecoController.AtualizarEndereco(System.Int32,AgendaApi.Controllers.Dtos.Endereco.UpdateEnderecoDto)">
+            <summary>Atualiza um endereço no banco de dados</summary>
+            <param name = "agendaDto" > Objeto com os campos necessários para atualização de um Endereço</param>
+            <returns>ActionResult</returns>
+            <response code = "204" > Caso a atualização seja realizada com sucesso</response>
+        </member>
+        <member name="M:AgendaApi.Controllers.EnderecoController.DeletarEndereco(System.Int32)">
+            <summary>Exclui um Endereço do banco de dados</summary>
+            <param name = "id" >Id do Endereço que deverá ser excluído</param>
+            <returns>ActionResult</returns>
+            <response code = "204" > Caso a exclusão seja realizada com sucesso</response>
+        </member>
+    </members>
+</doc>
